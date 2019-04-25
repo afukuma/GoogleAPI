@@ -2,7 +2,9 @@ Framework Core だと、Nuget-DynamicJSONがうまく動かないので、Framew
 
 手順
 Nugetパッケージ管理で、「DynamicJson」を入れる（作成者：neuecc）
-入れたら、プロジェクトに DynamicJson.cs が追加される    ←※Framework Coreだとこれができない
+入れたら、プロジェクトに DynamicJson.cs が追加される
+  Framework が Coreの場合、%userprofile%\.nuget\packages\dynamicjson\バージョン\context\ のしたにいるのでプロジェクトに追加
+
 using Codeplex.Data;
 してから、
 var json = DynamicJson.Parse("{\"requests\": [{\"up ・・・
