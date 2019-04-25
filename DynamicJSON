@@ -1,0 +1,9 @@
+Framework Core だと、Nuget-DynamicJSONがうまく動かないので、Framework Standardでやるのが吉
+
+手順
+Nugetパッケージ管理で、「DynamicJson」を入れる（作成者：neuecc）
+入れたら、プロジェクトに DynamicJson.cs が追加される    ←※Framework Coreだとこれができない
+using Codeplex.Data;
+してから、
+var json = DynamicJson.Parse("{\"requests\": [{\"up ・・・
+とすると、変数jsonが構造化される
